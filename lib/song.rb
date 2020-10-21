@@ -30,7 +30,7 @@ end
 def self.genre_count
   genre_counter = {}
     @@genres.each do |genre|
-      if genre_counter[genre] = Integer
+      if genre_counter[genre].type = Integer
         genre_counter[genre] +=1
       else
         genre_counter[genre] = 1
