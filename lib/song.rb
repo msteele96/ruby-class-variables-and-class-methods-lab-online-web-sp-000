@@ -34,7 +34,7 @@ def self.genre_count
       if genre_counter[genre] = nil
         genre_counter[genre] = value
       else
-        genre_counter[genre][value+1]
+        genre_counter[genre] value +1
       end
     end
   return genre_counter
