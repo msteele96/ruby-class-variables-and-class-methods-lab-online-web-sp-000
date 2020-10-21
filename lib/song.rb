@@ -33,9 +33,7 @@ def self.genre_count
       if genre_counter[genre] = nil
         genre_counter[genre] = 1
       else
-        do |genre|
         genre_counter[genre] = value+=1
-      end
       end
     end
   return genre_counter
