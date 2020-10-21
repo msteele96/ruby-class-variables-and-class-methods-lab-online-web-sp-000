@@ -30,7 +30,7 @@ end
 def self.genre_count
   genre_counter = {}
     @@genres.map do |genre|
-      genre_counter[genre] += 1
+      genre_counter[genre] = 1
     end
   return genre_counter
 end
