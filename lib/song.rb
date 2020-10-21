@@ -28,15 +28,16 @@ def self.artists
 end
 
 def self.genre_count
-  genre_counter = {}
-    @@genres.each do |genre|
-      if genre_counter[genre] = true
-        genre_counter[genre] +=1
-      else
-        genre_counter[genre] = 1
-      end
-    end
-  return genre_counter
+  # genre_counter = {}
+  #   @@genres.each do |genre|
+  #     if genre_counter[genre] = true
+  #       genre_counter[genre]
+  #     else
+  #       genre_counter[genre] = 1
+  #     end
+  #   end
+  # return genre_counter
+  @@genres.to_histogram
 end
 
 def self.artist_count
