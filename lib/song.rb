@@ -40,8 +40,15 @@ def self.genre_count
 end
 
 def self.artist_count
-
-  return #hash similar to above
+  artist_counter = {}
+    @@artists.each do |artist|
+      if artist_counter[artist].class == Integer
+        artist_counter[artist] +=1
+      else
+        artist_counter[artist] = 1
+      end
+    end
+  return artist_counter
 end
 
 end
