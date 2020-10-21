@@ -30,7 +30,7 @@ end
 def self.genre_count
   genre_counter = {}
     @@genres.map do |genre|
-
+      genre_counter[genre] += 1
     end
   return #hash genre => num of songs of that genre
 end
